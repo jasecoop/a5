@@ -1,0 +1,59 @@
+.survey
+  display: block
+  position: fixed
+  top: 20px
+  right: 30px
+  border-radius: 5px
+  z-index: 9999
+  background: rgba(00,00,00,.04)
+  padding: 5px 10px
+  &:hover
+    text-decoration: none
+    background: rgba(00,00,00,.07)
+
+
+.intro, textarea
+  background: image-url('bg.png') bottom repeat-x
+
+textarea#main
+  border: none
+  z-index: 1
+
+  &:focus
+    outline: none
+    color: rgba(00,00,00,.9)
+
+.intro
+  display: none
+  z-index: 2
+  cursor: text
+
+p.gb
+  margin-top: 4em
+
+.logo
+  display: block
+  width: 40px
+  height: 27px
+  background: image-url('logo2.png')
+  position: fixed
+  bottom: 2em
+  z-index: 3
+  left: 50%
+  margin-left: -20px
+  opacity: .6
+  &:hover
+    opacity: 1
+
+#myModal
+  .modal-body
+    padding: 5em
+    p:last-child
+      margin-bottom: 0
+
+
+// ffs moz
+@-moz-document url-prefix()
+  textarea#main, intro
+    padding: 0
+    margin: 3em 25% 0 25%

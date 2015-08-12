@@ -1,0 +1,22 @@
+@import "_01_base/_bootstrap.min";
+
+body, textarea {
+  font-family: georgia;
+  font-size: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+// Bootstrap overide
+
+textarea {
+  box-shadow: none !important;
+  border-radius: none;
+  focus: {
+    outline: none;
+    box-shadow: none;
+  };
+}

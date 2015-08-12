@@ -2,22 +2,62 @@
 layout: default
 ---
 
-<div class="home">
+<script type="text/javascript">
+ $('#myModal').modal()
+</script>
 
-  <h1 class="page-heading">Posts</h1>
+<a target="_blank" href="https://jasecoop.typeform.com/to/tMd2vv" class="survey">Help improve a5</a>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="intro">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <p>Hello.</p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p>This is a5.</p>
+
+  <p>Jot down things you need to remember.</p>
+
+  <p>When you return your text will still be here.</p>
+
+  <p class="gb">Goodbye.</p>
 
 </div>
+
+<form data-persist="garlic" method="POST">
+
+  <textarea id="main" style="display: none;"></textarea>
+
+</form>
+
+<a href="#myModal" role="button" class="logo" data-toggle="modal"></a>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal hide fx="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <div class="modal-body">
+
+    <p>a5 is a tiny, little web thing built by <a href="http://twitter.com/jasecoop">Jason Cooper</a>.</p>
+
+    <p>I use it to help me remember things I'd most likely forget when browsing the web.</p>
+
+    <p>Hopefulit useful too.</p>
+
+    <p>— Jase</p>
+
+  </div>
+
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36287411-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
