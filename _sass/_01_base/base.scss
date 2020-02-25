@@ -1,5 +1,3 @@
-@import "_01_base/_bootstrap.min";
-
 body, textarea {
   font-family: georgia;
   font-size: 100%;
@@ -15,8 +13,8 @@ p {
 textarea {
   box-shadow: none !important;
   border-radius: none;
-  focus: {
+  &:focus {
     outline: none;
     box-shadow: none;
-  };
+  }
 }
